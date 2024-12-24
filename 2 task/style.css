@@ -1,0 +1,331 @@
+button{
+    border: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.headIMG {
+    position: absolute;
+}
+
+.cubeIMG{
+    position: absolute; 
+
+    top: 40px; 
+    left: 122px; 
+}
+
+.profileRectangle{
+    position: absolute;
+
+    left: 1232px;
+    top: 30px;
+}
+
+.profileArrow{
+    position: absolute;
+
+    left: 1246px;
+    top: 44px;   
+}
+
+.userAVA{
+    position: absolute;
+
+    left: 1272px;
+    top: 40px;
+}
+
+.MainNaming{
+    position: absolute;
+
+    left: 63px;
+    top: 384px;
+
+    width: 741px;
+    height: 537px;
+
+    background-color: #fff;
+}
+
+.MainNaming p {
+    position: absolute;
+
+    font-size: 39px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+
+    left: 64px;
+    top: 96px;
+
+    margin: 0px;
+}
+
+.MainNaming p + span{
+    position: absolute;
+
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #454545;
+
+    left: 64px;
+    top: 272px;
+}
+
+.ExploreButton{
+    position: absolute;
+
+    left: 62px;
+    top: 397px;
+}
+
+.DiscoveryCards{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+
+    width: 100%;
+
+    top: 1049px;
+}
+
+.DiscoveryCards div.Card {
+    flex: 1;
+
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.DiscoveryCards div.Card div{
+    margin: 0 10px;
+}
+
+.DiscoveryCards div p.name{
+    font-size: 24px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.DiscoveryCards p.desccription{
+    
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #454545;
+}
+
+.DiscoveryCards a.link{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #F78065;
+}
+
+.Card img{
+    margin-bottom: 70px;
+}
+
+.secondSection{
+    width: 100%;
+    position: absolute;
+    top: 1777px; 
+    margin-left: 2%;
+}
+
+.SecondTopicName{
+    font-size: 36px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.DescriptionCards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.DescriptionCards .Card{
+    flex: 1;
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.DescriptionCards .Card .name{
+    font-size: 22px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+
+.DescriptionCards .Card .description{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #454545;
+}
+
+.DescriptionCards .Card .link{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #F78065;
+}
+
+.DescriptionCards .Card img{
+    margin: 70px 0;
+}
+
+.DescriptionCards .Card div{
+    margin: 0 10px;
+}
+
+.thirdSection{
+    width: 90%;
+    position: absolute;
+    top: 2458px;
+    padding: 5%;
+
+    display: flex; 
+    justify-content: space-between;
+}
+
+.ThirdTopicName{
+    font-size: 36px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    text-align: left;
+
+    margin-top: 0;
+}
+
+.thirdSection .description{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #454545;
+}
+
+.thirdSection .Cards{
+    display: flex;
+    flex: 2;  
+    justify-content: space-between;
+    margin: 0;
+}
+
+.thirdSection .Cards .Card .name{
+    font-size: 24px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+
+.thirdSection .Cards .Card .description{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #454545;
+}
+
+.thirdSection .Cards .Card .link{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #F78065;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 40px 5%;
+    font-family: "Montserrat", serif;
+    color: #000;
+    border-top: 1px solid #eaeaea;
+    width: 95%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section.brand {
+    flex: 2;
+}
+
+.footer-section.brand h3{
+    font-size: 24px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.footer-section.brand p{
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #F78065;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+    border-top: 1px solid #eaeaea;
+    padding-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 15px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #F78065;
+}

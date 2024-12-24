@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Изучение Go Lang: особенности языка программирования, его функциональные возможности, горутины и каналы, а также ресурсы для обучения и сообщество разработчиков. Пошаговые уроки и полезные материалы.">
+    <meta name="keywords" content="Go Lang, язык программирования Go, изучение Go, Go для начинающих, Go горутины, Go каналы, Go Lang обучение, Go особенности, Go сообщество, Go уроки, Go для серверных технологий">
+    <title>Проект на Go Lang</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            background-color: #d6eeee;
+            color: #333;
+        }
+
+        header {
+            background-color: #007d9c;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        nav {
+            background-color: #005f75;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .video {
+            text-align: center;
+            padding: 5% 0%;
+        }
+
+        .video-frame iframe {
+            width: 65%;
+            height: 400px;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.354);
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s;
+            margin: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #007d9c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;  
+            }
+
+            nav ul li {
+                margin: 10px 0; 
+                display: block;  
+            }
+
+            .video-frame iframe {
+                width: 100%;
+                height: 250px;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+
+            footer {
+                padding: 15px;
+            }
+
+            .social-icons a {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: medium;
+            }
+
+            .video-frame iframe {
+                height: 200px;
+            }
+
+            .card {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" alt="Go Logo">
+            <h1>Проект на Go Lang</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#start">Особенности</a></li>
+            <li><a href="#features">Начало работы</a></li>
+            <li><a href="#tutorials">Уроки</a></li>
+            <li><a href="#community">Сообщество</a></li>
+            <li><a href="#resources">Ресурсы</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="start">
+            <h2>Особенности Go Lang</h2>
+            <p>Go (или Golang) — это язык программирования, разработанный компанией Google в 2007 году и выпущенный в 2009 году, который сочетает в себе простоту синтаксиса и высокую производительность. Он предназначен для разработки масштабируемых и высокопроизводительных приложений, особенно в области серверных технологий, облачных сервисов и микросервисов. Go поддерживает параллельное выполнение задач с помощью горутин и каналов, что делает его идеальным для многозадачных систем и обработки большого объема данных.</p>
+        </section>
+
+        <section id="features" class="video">
+            <h2>Начало работы с Go Lang</h2>
+            <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/YS4e4q9oBaU" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="tutorials" class="cards">
+            <div class="card">
+                <img src="https://cdn.britannica.com/44/260944-050-7653AA68/go-gopher-go-programming-language-by-google.jpg" alt="Изучение Go">
+                <p>Изучите основы Go с нашими пошаговыми уроками.</p>
+            </div>
+            <div class="card">
+                <img src="https://golang.org/doc/gopher/frontpage.png" alt="Особенности Go">
+                <p>Узнайте о мощных функциях языка: горутины, каналы и многое другое.</p>
+            </div>
+            <div class="card">
+                <img src="https://blog.golang.org/gopher/gopher.png" alt="Сообщество Go">
+                <p>Присоединяйтесь к активному сообществу разработчиков по всему миру.</p>
+            </div>
+        </section>
+
+        <section id="community">
+            <h2>Сообщество Go Lang</h2>
+            <p>Сообщество Go (Golang) активно развивает и поддерживает язык, предлагая обширную документацию, ресурсы для обучения, а также платформы для обмена опытом и решения проблем, такие как форумы, чаты и GitHub.</p>
+        </section>
+
+        <section id="resources">
+            <h2>Полезные ресурсы</h2>
+            <ul>
+                <li><a href="https://golang.org/" target="_blank">Официальный сайт Go</a></li>
+                <li><a href="https://pkg.go.dev/" target="_blank">Документация Go</a></li>
+                <li><a href="https://golang.org/doc/" target="_blank">Руководства и статьи</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Контакты: <a href="mailto:yeliseypolonsky@gmail.com">yeliseypolonsky@gmail.com</a></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
